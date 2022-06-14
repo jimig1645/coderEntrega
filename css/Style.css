@@ -1,0 +1,414 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: rgb(159, 177, 228);
+
+}
+
+h1 {
+    text-align: center;
+    margin-bottom: 5%;
+    color: rgb(5, 5, 5);
+    font-weight: bolder;
+    font-size: 40px;
+}
+
+body header {
+    background-image: url(https://upload.wikimedia.org/wikipedia/commons/thumb/6/60/DefPuebloCABA_-_Esquina_Homero_Manzi_Boedo.jpg/4592px-Mapcarta.jpg);
+    background-repeat: no-repeat;
+    background-position-y: 39.95%; 
+    background-position-x: 60%;  
+    background-clip: inherit;
+}
+
+body .contenedor {
+    display: flex;
+    justify-content: space-around;
+
+}
+
+
+body header ul {
+    display: flex;
+    justify-items: space-around;
+    background-color: grey;
+    border-style: double;
+
+}
+
+body header ul li {
+    list-style: none;
+    border-right: solid;
+    padding-right: 10px;
+    padding-left: 10px;
+
+}
+
+body header ul li button{
+    font-weight: bolder;
+}
+
+
+body header ul .contacto {
+    border-right: none;
+
+}
+
+nav ul li button {
+    background-color: grey;
+    border: none;
+
+}
+
+nav ul li button a{
+    text-decoration: none;
+    color: black;
+
+}
+
+.contenedor__logo img {
+animation-name: girar;
+animation-iteration-count: infinite;
+animation-duration: 25s;
+
+}
+
+
+
+.contenedor__logo img {
+    margin-top: -30%;
+    margin-left: -100%;
+    border-radius: 100%;
+
+}
+
+main {
+    height: 100vh;
+
+}
+
+.quienesSomos {
+    text-align: center;
+
+}
+
+.quienesSomos__titulo {
+    margin-top: 1vh;
+    margin-bottom: 1vh;
+}
+
+body main h3 {
+    text-align: center;
+    margin-top: 10vh;
+
+}
+
+.gruposLiterarios {
+    justify-content: center;
+    display: grid;
+    grid-template-rows: 2fr;
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas: "boedo""florida";
+    height: 30vh;
+
+}
+
+.boedo {
+    grid-area: "boedo";
+    text-align: center;
+}
+
+.florida {
+    grid-area: "florida";
+    text-align: center;
+
+}
+
+.tango {
+    text-align: center;
+    margin-top: 5em;
+    padding-top: 1em;
+    padding-bottom: 1em;
+    background: radial-gradient(circle, rgb(195, 207, 230),rgb(224, 208, 208));
+    margin-left: 8em;
+    margin-right: 8em;
+    border-radius: 20%;
+    border-left: solid;
+    border-right: solid;
+    border-width: 0.6em;
+}
+
+.tango span {
+    font-size: smaller;
+    font-weight: bolder;
+
+}
+
+.imagenes {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 5em;
+    margin-top: 10em;
+    padding-top: 2em;
+    background: radial-gradient(circle, rgb(183, 202, 235),rgb(224, 208, 208));
+    border-radius: 10%;
+    border-top: solid;
+    border-width: 0.8em;
+    border-color: grey;
+    
+
+}
+
+img {
+    border: solid;
+
+}
+
+.borges {
+    display: flex;
+    flex-flow: column;
+    margin-right: 8rem;
+    height: 300px;
+    width: 100px;
+
+}
+
+.homeroManzi {
+    margin-left: 8rem;
+    display: flex;
+    flex-flow: column;
+    height: 280px;
+    width: 100px;
+
+}
+
+.buttonSection {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: larger;
+    border: none;
+    background-color: grey;
+    border-top-left-radius: 20%;
+    border-bottom-right-radius: 20%;
+
+}
+
+.buttonSection a {
+    text-decoration: none;
+    color: black;
+
+}
+
+footer {
+    text-align: center;
+
+}
+
+
+@media screen and (max-width:480px) {
+
+    body header nav ul {
+        display: flex;
+        flex-flow: column wrap;
+        margin-left: 2em;
+        border-style: none;
+
+    }
+
+    body header nav ul li {
+        border: double;
+        padding: 1rem;
+
+    }
+
+    body .contenedor {
+        display: flex;
+        justify-content: space-around;
+        background-color: rgb(159, 177, 228);
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: 20em;
+    
+    }
+
+    .contenedor__logo {
+        width: 1rem;
+        margin-top: 4rem;
+
+    }
+
+    main {
+        margin-top: 4em;
+
+    }
+
+    .imagenes{
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: 5em;
+        margin-top: 10em;
+        padding-top: 2em;
+        background:none ;
+        background-color: rgb(159, 177, 228);
+        border-radius: 0%;
+        border-top: none;
+        border-width: 0em;
+        border-color: none;
+
+}
+
+    section {
+        display: flex;
+        flex-direction: column;
+        gap: 4em;
+        margin-left: 5em;
+
+    }
+
+    section div img {
+        width: 6em;
+        height: 9em;
+
+    }
+
+    section .homeroManzi {
+        margin: 0em;
+        margin-right: 2em;
+
+    }
+
+    section .homeroManzi img {
+        height: 10em;
+
+    }
+
+    .buttonSection {
+        background-color: none;
+        font-size: large;
+        margin: 0em;
+        margin-top: 2em;
+
+    }
+
+    .tango {
+
+        margin-left: 0em;
+        margin-right: 0em;
+
+    }
+
+    .borges img {
+        width: 100px;
+        margin-left: -30px;
+
+    }
+
+    .robertoArlt img {
+        margin-left: -10px;
+
+    }
+
+
+}
+
+@media screen and (max-width:1000px) {
+
+    .contenedor__logo {
+        width: 1rem;
+        margin-top: 4rem;
+        margin-left: 1.5rem;
+    }
+
+    section div img {
+        width: 6em;
+        height: 9em;
+
+    }
+
+}
+
+@media screen and (max-width:800px) {
+
+    section {
+        display: flex;
+
+    }
+
+    section .robertoArlt {
+        margin-left: 2em;
+
+    }
+
+    section .borges {
+        margin-left: 3em;
+
+    }
+
+    section .homeroManzi {
+        margin-left: 1em;
+        margin-right: 1em;
+    }
+
+}
+
+.productosHomero {
+    display: flex;
+    flex-flow: row wrap;
+    gap: 4em;
+
+}
+
+.productosHomero img {
+    width: 20em;
+    height: 50vh
+}
+
+.productosHomero .productosHomero__darienzo,
+.productosHomero__disarli,
+.productosHomero__discepolo,
+.porductosHomero__goyeneche,
+.productosHomero__troilo {
+    display: flex;
+    flex-direction: column;
+
+}
+
+.pHm {
+    text-align: center;
+
+}
+
+.footerHm {
+    margin-top: 70em;
+
+}
+
+.h2Hm {
+    text-align: center;
+    margin-bottom: 3em;
+
+}
+
+.buttonHm:hover {
+    box-shadow: 10px 10px 10px black;
+    transform: scale(1.2);
+
+}
+
+@media screen and (max-width:672px) {
+
+    .footerHm {
+        text-align: center;
+        margin-top: 100em;
+    
+    }
+
+
+
+}
